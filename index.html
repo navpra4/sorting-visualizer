@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+</head>
+
+<body>
+
+    <div style="display: flex; flex-direction: column;">
+        <nav style="display: flex; align-items: start; justify-content: start;">
+            <div class="array-inp" style="display: flex; flex-direction: column; justify-content: start;">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=70>
+                
+            </div>
+            <div>
+                <p> Algo-Speed:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=3>
+            </div>
+            <div>
+                <button id="a_gen">Generate New Array!</button>
+            </div>
+                
+            <div class="algos" style = "display: flex; align-items: start; justify-content: space-between; ">
+                <button id = "Bubble" >Bubble</button>
+                <button id = "Selection">Selection</button>
+                <button id = "Insertion">Insertion</button>
+                <button id = "Merge">Merge</button>
+                <button id = "Quick">Quick</button>
+            </div>
+
+        </nav>
+    </div>
+
+    <div id="array_container" style="display: flex; width: 100%; height: 70vh;"></div>
+
+    <script src="./scripts/main.js"></script>   
+</body>
+        
+</html>      
