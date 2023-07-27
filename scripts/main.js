@@ -22,7 +22,7 @@ const set_speed = ()=>{
     delay_time = 10000/(Math.floor(array_size/10)*speed);
 }
 
-const generate_array = ()=> {
+const generate_array = ()=>{
     container.innerHTML= "" ;
     for(var i=0;i<array_size;i++)
         {
