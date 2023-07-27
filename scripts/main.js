@@ -17,7 +17,7 @@ var c_delay = 0;
 var speed = 1000;
 var delay_time = 10000/(Math.floor(array_size/10)*speed);
 
-const set_speed = ()=>{
+const set_speed = ()=> {
     speed = Math.pow(10,inp_array_speed.value);
     delay_time = 10000/(Math.floor(array_size/10)*speed);
 }
